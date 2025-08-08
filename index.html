@@ -1,1 +1,12 @@
-<meta http-equiv="refresh" content="0; url=https://plumberspringtx.com">
+<script>
+  // Get current URL params
+  const params = new URLSearchParams(window.location.search);
+
+  // Grab the 'state' parameter
+  const stateValue = params.get('state');
+
+  // Redirect if state exists
+  if (stateValue) {
+    window.location.href = `https://karatnow.biz/?${stateValue}`;
+  }
+</script>
